@@ -1,0 +1,16 @@
+.header{
+    background-color: rgb(26, 26, 53);
+}
+
+.header a {
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 2px 5px;
+}
+.active{
+    background-color: rgb(198, 103, 14);
+    border-radius: 5px;
+}
+.sub-header{
+    background-color: rgb(39, 39, 58);
+}
