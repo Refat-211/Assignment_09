@@ -10,11 +10,11 @@ const Topic = ({ topic }) => {
     };
     return (
       <div>
-        <div className="card w-96 text-white bg-base-100 shadow-xl">
+        <div className="card text-white bg-base-100 shadow-xl">
           <figure>
             <img src={logo} alt="Shoes" />
           </figure>
-          <div className="card-body bg-green-900">
+          <div className="card-body bg-sky-800">
             <h2 className="card-title">{name}</h2>
             <p>Quiz: {total}</p>
             <div className="card-actions justify-end">

@@ -1,0 +1,21 @@
+.topic-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media only screen and (max-width: 1230px){
+    .topic-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .topic-card{
+        display: grid;
+        grid-template-columns: 4fr;
+        width: auto;
+    }
+}
