@@ -13,16 +13,35 @@ function App() {
       path: "/",
       element: <Main></Main>,
       children: [
-        { path: "/", element: <Home></Home> },
-        { path: "/home", element: <Home></Home> },
-        { path: "/topics", 
-          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
-          element: <Topics></Topics> },
-        { path: "/statistics", element: <Statistics></Statistics> },
-        { path: "/blog", element: <Blog></Blog> },
+        { 
+          path: "/", element: <Home></Home> 
+        },
+        { 
+          path: "/home", element: <Home></Home> 
+        },
+        { 
+          path: "/topics", 
+          loader: async () => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz`);
+          },
+          
+          element: <Topics></Topics> 
+        },
+        { 
+          path: "/statistics", 
+          loader: async () => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz`);
+          },
+          element: <Statistics></Statistics> 
+        },
+        { 
+          path: "/blog", element: <Blog></Blog> 
+        },
       ],
     },
-    { path: "*", element: <Error></Error> },
+    { 
+      path: "*", element: <Error></Error> 
+    },
   ]);
   return (
     <div className="App">
