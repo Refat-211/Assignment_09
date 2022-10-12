@@ -27,7 +27,7 @@ const Statistics = () => {
 
   return (
     <div className="statistics">
-      <h2 className=" mt-5 mb-5">Statistics data</h2>
+      <h2 className=" mt-5 mb-5 text-white text-2xl">Statistics data</h2>
       <div>
         <LineChart
           className="mx-auto"
