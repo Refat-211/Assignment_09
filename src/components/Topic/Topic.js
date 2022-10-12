@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Statistics = () => {
+
+const Topic = () => {
+    
     return (
       <div>
         
@@ -8,4 +10,4 @@ const Statistics = () => {
     );
 };
 
-export default Statistics;
+export default Topic;

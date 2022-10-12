@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return (
       <div>
-        <div className="header text-white lg:p-10 lg:flex-row sm:flex flex-col justify-between">
-          <h3 className="sm:text-xl font-bold lg:text-4xl">Quiz Maker</h3>
-          <nav className="lg:text-xl sm:text-lg">
+        <div className="header text-white lg:p-8 lg:flex-row sm:flex flex-col justify-between">
+          <h3 className="sm:text-2xl font-bold lg:text-4xl">QuizTime</h3>
+          <nav className="lg:text-xl sm:text-lg flex gap-3 lg:flex-row sm:flex flex-col">
             <NavLink
               className={({ isActive }) => (isActive ? "active" : undefined)}
               to="/home"
