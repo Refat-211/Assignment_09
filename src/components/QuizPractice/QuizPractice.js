@@ -40,16 +40,16 @@ const QuizPractice = ({ quiz, questionData, idx }) => {
   }
 
   return (
-    <div>
-      <h4 className="text-start text-xl text-info">
-        Quiz: <span className="text-danger">{idx + 1}</span>
+    <div className='p-10'>
+      <h4 className="text-start text-xl text-white">
+        Quiz: <span className="text-white">{idx + 1}</span>
       </h4>
       <div>
         <div className="card border-0 shadow-lg mb-5">
           <div className="p-4">
             <div className="flex p-3 justify-between">
               <div className="question">
-                <h5 className="card-title text-start">{question}</h5>
+                <h5 className="card-title text-start">{question.replace(/<p>|<\/p>/g,"")}</h5>
               </div>
               <div className="flex">
                 <div className="me-2">
@@ -72,7 +72,6 @@ const QuizPractice = ({ quiz, questionData, idx }) => {
                             defaultChecked={false}
                             name="radio-6"
                             className="radio checked:bg-blue-500"
-                            // checked
                           />
                         </label>
                       </div>
