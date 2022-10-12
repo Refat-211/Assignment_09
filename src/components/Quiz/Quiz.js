@@ -9,10 +9,10 @@ const Quiz = () => {
   //   console.log(questions);
   return (
     <div>
-      <h2 className="fst-italic my-5 text-white">
+      <h2 className="fst-italic my-5 text-3xl text-white">
         Quiz question of {quizName}
       </h2>
-      <h3 className="text-white">
+      <h3 className="text-white text-xl">
         Total Quiz: <span className="text-white">{questions.length}</span>
       </h3>
       {questions.map((questionData, idx) => (
