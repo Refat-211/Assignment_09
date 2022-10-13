@@ -27,14 +27,14 @@ const QuizPractice = ({ quiz, questionData, idx }) => {
           icon: "success",
           title: "Your ans is Correct !",
           showConfirmButton: false,
-          timer: 1800,
+          timer: 1600,
         });
     }
     else{
         Swal.fire({
           icon: "error",
           title: "Your ans is incorrect !",
-          timer: 1800,
+          timer: 1600,
         });
     }
   }
@@ -74,7 +74,7 @@ const QuizPractice = ({ quiz, questionData, idx }) => {
                       type="radio"
                       defaultChecked={false}
                       name="radio-6"
-                      className="radio checked:bg-blue-500"
+                      className="radio radio-secondary checked:bg-yellow-400"
                     />
                   </label>
                 </div>

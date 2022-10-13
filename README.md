@@ -1,3 +1,22 @@
+# My Project Details
+
+## Project Name: Quiz Time
+## Live Website Link: 
+
+### My project is a online quiz website. Here i used HTML, CSS, Tailwind CSS, Javascript, ReactJS.
+### Component used: Daisy UI, HeroIcons.
+
+## Here i used some ReactJS features.
+### JSX (JavaScript Syntax Extension)
+### Virtual DOM
+### Conditional statements
+### Components
+
+## Here i create so many router in components folder for simplify my project.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
