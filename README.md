@@ -1,7 +1,7 @@
 # My Project Details
 
 ## Project Name: Quiz Time
-## Live Website Link: 
+## Live Website Link: https://quiz-time-c8a3de.netlify.app/
 
 ### My project is a online quiz website. Here i used HTML, CSS, Tailwind CSS, Javascript, ReactJS.
 ### Component used: Daisy UI, HeroIcons.

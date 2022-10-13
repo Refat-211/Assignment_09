@@ -3,9 +3,8 @@ import Swal from "sweetalert2";
 import { EyeIcon } from "@heroicons/react/24/solid";
 import './QuizPractice.css'
 
-const QuizPractice = ({ quiz, questionData, idx }) => {
+const QuizPractice = ({questionData, idx }) => {
   const { options, correctAnswer, question } = questionData;
-  const [option1, option2, option3, option4] = options;
 //   console.log(correctAnswer);
 
   const seeAns = () => {
