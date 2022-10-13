@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css'
 import quiztime from "../../images/quiztimes.png";
+import Topics from '../Topics/Topics';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             Its quiz time. Lets go, test your tech related knowledge.
           </p>
         </div>
+        <Topics></Topics>
       </div>
     );
 };

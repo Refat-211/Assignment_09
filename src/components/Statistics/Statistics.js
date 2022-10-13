@@ -21,7 +21,7 @@ const Statistics = () => {
     { name: "React", total: total1, pv: 2400, amt: 2400 },
     { name: "javascript", total: total2, pv: 2400, amt: 2400 },
     { name: "CSS", total: total3, pv: 2400, amt: 2400 },
-    { name: "GitHub", total: total4, pv: 2400, amt: 2400 },
+    { name: "Git", total: total4, pv: 2400, amt: 2400 },
   ];
 
   console.log(quiz);

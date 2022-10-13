@@ -3,8 +3,8 @@ import React from 'react';
 const Blog = () => {
     return (
       <div className="text-white mt-7 text-center p-10">
-        <h1 className='text-5xl'>Question And Answer</h1>
-        <div className='my-5'>
+        <h1 className="text-5xl">Question And Answer</h1>
+        <div className="my-5">
           <h2 className="text-xl">
             1. What is the main perpose of React Router?
           </h2>
@@ -14,7 +14,10 @@ const Blog = () => {
             Application. React Router is a state container for the current
             location , or URL. It keeps track of the location and renders
             different Route's as it changes, and it also gives you tools to
-            update the location using Link and the history API.
+            update the location using Link and the history API. The application
+            will contain three components: home component, about a component,
+            and contact component. We will use React Router to navigate between
+            these components.
           </p>
         </div>
         <hr />
@@ -27,11 +30,16 @@ const Blog = () => {
             "prop drilling" or moving props from grandparent to child to parent,
             and so on.Context provides a way to pass data or state through the
             component tree without having to pass props down manually through
-            each nested component.
+            each nested component. The React Context API is a way for a React
+            app to effectively produce global variables that can be passed
+            around. This is the alternative to "prop drilling" or moving props
+            from grandparent to child to parent, and so on. Context is also
+            touted as an easier, lighter approach to state management using
+            Redux.
           </p>
         </div>
         <hr />
-        <div className='my-5'>
+        <div className="my-5">
           <h2 className="text-xl">3. How does useRef() actually work?</h2>
           <p className="">
             useRef() hook creates references. Calling const reference =

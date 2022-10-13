@@ -16,7 +16,7 @@ const Topic = ({ topic }) => {
           </figure>
           <div className="card-body bg-sky-800">
             <h2 className="card-title">{name}</h2>
-            <p>Quiz: {total}</p>
+            <p>Questions: {total}</p>
             <div className="card-actions justify-end">
               <button onClick={handleNavigate} className="btn btn-primary">
                 Let's Go

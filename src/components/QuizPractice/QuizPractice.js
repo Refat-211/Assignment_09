@@ -14,7 +14,7 @@ const QuizPractice = ({ quiz, questionData, idx }) => {
       icon: "success",
       title: `Ans: ${correctAnswer}`,
       showConfirmButton: false,
-      timer: 2000,
+      timer: 1800,
     });
   };
 
@@ -27,57 +27,59 @@ const QuizPractice = ({ quiz, questionData, idx }) => {
           icon: "success",
           title: "Your ans is Correct !",
           showConfirmButton: false,
-          timer: 2000,
+          timer: 1800,
         });
     }
     else{
         Swal.fire({
           icon: "error",
-          title: "Oops...",
-          text: "Your ans is incorrect !",
+          title: "Your ans is incorrect !",
+          timer: 1800,
         });
     }
   }
 
   return (
-    <div className='p-10'>
+    <div className="p-10">
       <h4 className="text-start text-xl text-white">
-        Quiz: <span className="text-white">{idx + 1}</span>
+        Question: <span className="text-white">{idx + 1}</span>
       </h4>
       <div>
         <div className="card border-0 shadow-lg mb-5">
           <div className="p-4">
             <div className="flex p-3 justify-between">
               <div className="question">
-                <h5 className="card-title text-start">{question.replace(/<p>|<\/p>/g,"")}</h5>
+                <h5 className="card-title text-start text-yellow-300">
+                  {question.replace(/<p>|<\/p>/g, "")}
+                </h5>
               </div>
               <div className="flex">
-                <div className="me-2">
-                  <small>Ans</small>
+                <div className="me-2 text-pink-500">
+                  <small>Right Ans</small>
                 </div>
                 <div onClick={seeAns} className="eyeIcon-div">
                   <EyeIcon className="icon-eye" />
                 </div>
               </div>
             </div>
-            {
-                options.map((option, index) => {
-                    return (
-                      <div className="form-control" key={index}>
-                        <label className="label cursor-pointer">
-                          <span className="label-text">{option}</span>
-                          <input
-                            onChange={() => handleClickOption(option)}
-                            type="radio"
-                            defaultChecked={false}
-                            name="radio-6"
-                            className="radio checked:bg-blue-500"
-                          />
-                        </label>
-                      </div>
-                    );
-                })
-            }
+            {options.map((option, index) => {
+              return (
+                <div className="form-control" key={index}>
+                  <label className="label cursor-pointer">
+                    <span className="label-text text-lg text-white">
+                      {option}
+                    </span>
+                    <input
+                      onChange={() => handleClickOption(option)}
+                      type="radio"
+                      defaultChecked={false}
+                      name="radio-6"
+                      className="radio checked:bg-blue-500"
+                    />
+                  </label>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
