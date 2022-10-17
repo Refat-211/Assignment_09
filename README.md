@@ -1,18 +1,18 @@
 # My Project Details
 
-## Project Name: Quiz Time
-## Live Website Link: https://quiz-time-c8a3de.netlify.app/
+- Project Name: Quiz Time
+- Live Website Link: https://quiz-time-c8a3de.netlify.app/
 
-### My project is a online quiz website. Here i used HTML, CSS, Tailwind CSS, Javascript, ReactJS.
-### Component used: Daisy UI, HeroIcons.
+- My project is a online quiz website. Here i used HTML, CSS, Tailwind CSS, Javascript, ReactJS.
+- Component used: Daisy UI, HeroIcons.
 
 ## Here i used some ReactJS features.
-### JSX (JavaScript Syntax Extension)
-### Virtual DOM
-### Conditional statements
-### Components
+- JSX (JavaScript Syntax Extension)
+- Virtual DOM
+- Conditional statements
+- Components
 
-## Here i create so many router in components folder for simplify my project.
+### Here i create so many router in components folder for simplify my project.
 
 
 
